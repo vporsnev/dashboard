@@ -8,26 +8,26 @@ export default function News() {
 
 	useEffect(() => {
 		const getNews = async () => {
-			const response = await axios.get(`${NEWS_API_URL}lang=en&page_size=10`, {
-				headers: { "x-api-key": `${NEWS_API_KEY}` },
-			});
+			const response = await axios.get(
+				`${NEWS_API_URL}?api-key=${NEWS_API_KEY}&page-size=10`
+			);
 			console.log(response);
-			setNews(response.data.articles);
+			setNews(response.data.response.results);
 		};
 		getNews();
 	}, []);
 
-	if (!news.length) return <h3>Loading...</h3>;
+	// if (!news.length) return <h3>Loading...</h3>;
 
 	return (
 		<div className="news">
 			<h3>Latest headlines</h3>
-			{news.map((article) => {
+			{news.map((result) => {
 				return (
 					<div>
-						<a className="article" href={article.link}>
-							<img className="news-img" src={article.media}></img>
-							{article.title}
+						<a className="article" target="_blank" href={result.webUrl}>
+							{/* <img className="news-img" src={article.media}></img> */}
+							{result.webTitle}
 						</a>
 					</div>
 				);
