@@ -1,0 +1,43 @@
+.to-do {
+	box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+		rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+	padding: 20px;
+	border-radius: 20px;
+	width: 200px;
+	height: 300px;
+	overflow: scroll;
+	margin-left: 20px;
+}
+
+.to-do h3 {
+	margin: 0;
+}
+
+.to-do ul {
+	padding-left: 20px;
+}
+
+.to-do li {
+	list-style-type: "-";
+	padding-left: 10px;
+}
+
+.new-task {
+	margin-top: 10px;
+}
+
+.new-task input {
+	height: 30px;
+	padding-left: 5px;
+	box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+		rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+	border: none;
+	border-radius: 5px;
+}
+
+.add-btn {
+	border: 0;
+	background-color: inherit;
+	font-size: 25px;
+	height: 20px;
+}

@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+.news {
+	box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+		rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+	padding: 20px;
+	border-radius: 20px;
+	width: 500px;
+	height: 300px;
+	overflow: scroll;
+}
+
+.news h3 {
+	margin: 0;
+}
+.article {
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+}
+
+.news-img {
+	width: 100px;
+	height: 80px;
+	object-fit: cover;
+	margin-right: 10px;
+}
