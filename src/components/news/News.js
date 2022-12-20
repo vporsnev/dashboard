@@ -8,9 +8,9 @@ export default function News() {
 
 	useEffect(() => {
 		const getNews = async () => {
-			const response = await axios.get(
-				`${NEWS_API_URL}language=en&pageSize=8&apiKey=${NEWS_API_KEY}`
-			);
+			const response = await axios.get(`${NEWS_API_URL}lang=en&page_size=10`, {
+				headers: { "x-api-key": `${NEWS_API_KEY}` },
+			});
 			console.log(response);
 			setNews(response.data.articles);
 		};
@@ -25,8 +25,8 @@ export default function News() {
 			{news.map((article) => {
 				return (
 					<div>
-						<a className="article" href={article.url}>
-							<img className="news-img" src={article.urlToImage}></img>
+						<a className="article" href={article.link}>
+							<img className="news-img" src={article.media}></img>
 							{article.title}
 						</a>
 					</div>
