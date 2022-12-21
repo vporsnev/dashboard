@@ -11,7 +11,7 @@ main {
 }
 
 .light {
-	background-color: rgb(215, 211, 204);
+	background-color: rgb(218, 216, 212);
 	color: #333 !important;
 }
 
@@ -32,9 +32,6 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-}
-
-.hello {
 }
 
 .toggle {
@@ -102,7 +99,7 @@ a {
 }
 
 @media (max-width: 600px) {
-	section {
-		display: block;
+	.third {
+		flex-direction: column;
 	}
 }
