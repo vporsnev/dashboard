@@ -1,12 +1,12 @@
 .to-do {
-	box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-		rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+	box-shadow: rgba(29, 32, 34, 0.84) 3px 3px 6px 0px inset,
+		rgba(255, 255, 255, 0.217) -3px -3px 6px 1px inset;
 	padding: 20px;
 	border-radius: 20px;
 	width: 200px;
 	height: 300px;
 	overflow: scroll;
-	margin-left: 20px;
+	margin-right: 30px;
 }
 
 .to-do h3 {
@@ -23,14 +23,16 @@
 }
 
 .new-task {
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 .new-task input {
 	height: 30px;
 	padding-left: 5px;
-	box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-		rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+	box-shadow: rgba(35, 35, 35, 0.84) 2px 2px 4px 0px inset,
+		rgba(237, 237, 237, 0.217) -2px -2px 4px 1px inset;
+	background-color: inherit;
+	color: inherit;
 	border: none;
 	border-radius: 5px;
 }
@@ -38,5 +40,18 @@
 .add-btn {
 	border: 0;
 	background-color: inherit;
+	color: inherit;
+	padding-top: 1px;
 	font-size: 25px;
+}
+
+.del-btn {
+	border: none;
+	background-color: inherit;
+	color: inherit;
+	cursor: pointer;
+}
+
+.fa-trash {
+	font-size: 15px;
 }

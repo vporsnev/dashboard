@@ -5,29 +5,104 @@ main {
 	color: #333;
 }
 
-section {
-	display: flex;
+.dark {
+	background-color: #333;
+	color: #fff !important;
 }
 
-@media (max-width: 600px) {
-	section {
-		display: block;
-	}
+.light {
+	background-color: rgb(215, 211, 204);
+	color: #333 !important;
 }
 
 h3 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	margin-top: 24px;
+	margin: 0;
 }
 
 a {
 	display: block;
 	margin-top: 8px;
 	margin-bottom: 32px;
-	color: #333;
+	color: inherit;
+}
+
+.top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .hello {
+}
+
+.toggle {
+	cursor: pointer;
+	display: inline-block;
+	align-self: center;
+}
+
+.toggle-switch {
+	display: inline-block;
+	background: rgb(70, 70, 70);
+	border-radius: 17px;
+	width: 52px;
+	height: 26px;
+	position: relative;
+	vertical-align: middle;
+	transition: background 0.25s;
+}
+.toggle-switch:before,
+.toggle-switch:after {
+	content: "";
+}
+.toggle-switch:before {
+	display: block;
+	background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+	border-radius: 50%;
+	box-shadow: 0 0 1px 2px rgba(36, 36, 36, 0.124);
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+	background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+	background: #ccc;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+	left: 27px;
+	background: rgb(70, 70, 70);
+}
+
+.toggle-checkbox {
+	position: absolute;
+	visibility: hidden;
+}
+
+.toggle-label {
 	margin-left: 5px;
+	position: relative;
+	top: 1px;
+}
+
+.second {
+	margin-top: 30px;
+}
+
+.third {
+	display: flex;
+	flex-direction: row;
+}
+
+@media (max-width: 600px) {
+	section {
+		display: block;
+	}
 }

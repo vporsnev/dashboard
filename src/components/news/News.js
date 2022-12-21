@@ -22,16 +22,17 @@ export default function News() {
 	return (
 		<div className="news">
 			<h3>Latest headlines</h3>
-			{news.map((result) => {
-				return (
-					<div>
-						<a className="article" target="_blank" href={result.webUrl}>
-							{/* <img className="news-img" src={article.media}></img> */}
-							{result.webTitle}
-						</a>
-					</div>
-				);
-			})}
+			<span>
+				{news.map((result) => {
+					return (
+						<div>
+							<a className="article" target="_blank" href={result.webUrl}>
+								{result.webTitle}
+							</a>
+						</div>
+					);
+				})}
+			</span>
 		</div>
 	);
 }
