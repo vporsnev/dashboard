@@ -1,9 +1,31 @@
 .business {
-	box-shadow: rgba(29, 32, 34, 0.84) 3px 3px 6px 0px inset,
-		rgba(255, 255, 255, 0.217) -3px -3px 6px 1px inset;
-	padding: 20px;
-	border-radius: 20px;
 	width: 300px;
 	height: 300px;
-	overflow: scroll;
+}
+
+.stock-card {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid rgba(25, 25, 25, 0.2);
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 8px;
+}
+
+.stock-name {
+	width: 200px;
+}
+
+.stock-company {
+	margin: 0;
+	font-size: 12px;
+}
+
+.stock-price {
+	margin: auto 10px auto 10px;
+}
+
+.stock-change {
+	margin: auto 10px auto 10px;
+	font-size: 12px;
 }

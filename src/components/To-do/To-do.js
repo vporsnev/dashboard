@@ -50,8 +50,10 @@ export default function ToDo() {
 	}
 
 	return (
-		<div className="to-do">
-			<h3>To do list</h3>
+		<div className="box to-do">
+			<div className="box-title">
+				<h3>To do list</h3>
+			</div>
 			<form onSubmit={handleFormSubmit} className="new-task">
 				<input
 					name="task"

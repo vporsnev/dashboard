@@ -1,11 +1,6 @@
 .to-do {
-	box-shadow: rgba(29, 32, 34, 0.84) 3px 3px 6px 0px inset,
-		rgba(255, 255, 255, 0.217) -3px -3px 6px 1px inset;
-	padding: 20px;
-	border-radius: 20px;
 	width: 200px;
 	height: 300px;
-	overflow: scroll;
 }
 
 .to-do h3 {

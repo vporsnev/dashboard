@@ -16,16 +16,21 @@ export default function Business() {
 	}, []);
 
 	return (
-		<div className="business">
-			<h3>Most active stocks</h3>
-			<span>
+		<div className="box business">
+			<div className="box-title">
+				<h3>Most active stocks</h3>
+			</div>
+			<div>
 				{stocks.map((data) => {
 					return (
-						<div>
-							<div>{data.symbol}</div>
-							<div>{data.company_name}</div>
-							<div>{data.price}</div>
+						<div className="stock-card">
+							<div className="stock-name">
+								<h3>{data.symbol}</h3>
+								<p className="stock-company">{data.company_name}</p>
+							</div>
+							<div className="stock-price">{data.price}</div>
 							<div
+								className="stock-change"
 								style={{
 									color:
 										parseFloat(data.change_percentage) < 0 ? "red" : "green",
@@ -36,7 +41,7 @@ export default function Business() {
 						</div>
 					);
 				})}
-			</span>
+			</div>
 		</div>
 	);
 }

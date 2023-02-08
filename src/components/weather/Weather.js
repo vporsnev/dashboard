@@ -30,7 +30,7 @@ export default function Weather() {
 	}, [lat, long]);
 
 	return (
-		<div className="weather">
+		<div className="box weather">
 			<div className="intro">
 				<span>The weather in </span>
 				<span className="cityname">

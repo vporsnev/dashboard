@@ -3,13 +3,8 @@
 }
 
 .news {
-	box-shadow: rgba(35, 35, 35, 0.84) 3px 3px 6px 0px inset,
-		rgba(237, 237, 237, 0.217) -3px -3px 6px 1px inset;
-	padding: 20px;
-	border-radius: 20px;
 	width: 300px;
 	height: 300px;
-	overflow: scroll;
 }
 
 .news h3 {
