@@ -3,6 +3,7 @@ import "./App.css";
 
 import Weather from "./components/weather/Weather";
 import News from "./components/news/News";
+import Business from "./components/business/Business";
 import Clock from "./components/clock/Clock";
 import ToDo from "./components/To-do/To-do";
 import Notes from "./components/notes/Notes";
@@ -36,6 +37,7 @@ export default function App() {
 			</div>
 			<div className="third">
 				<News />
+				<Business />
 				<ToDo />
 				<Notes />
 			</div>

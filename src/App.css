@@ -1,6 +1,4 @@
 main {
-	max-width: 100%;
-	margin: 0 auto;
 	padding: 32px;
 	color: #333;
 }
@@ -96,10 +94,16 @@ a {
 .third {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
 @media (max-width: 600px) {
+	main {
+		padding: 15px;
+	}
+
 	.third {
 		flex-direction: column;
+		gap: 30px;
 	}
 }

@@ -38,8 +38,15 @@ export default function ToDo() {
 					text: task.trim(),
 				},
 			]);
+			setTask("");
 		}
-		setTask("");
+	}
+
+	function handleTaskClick(id) {
+		const taskIndex = tasks.findIndex((task) => task.id === id);
+		let newTasks = [...tasks];
+		newTasks[taskIndex].isCompleted = !newTasks[taskIndex].isCompleted;
+		setTasks(newTasks);
 	}
 
 	return (
@@ -59,11 +66,20 @@ export default function ToDo() {
 			</form>
 			<ul className="task-list">
 				{tasks.map((task) => (
-					<li key={task.id}>
+					<li
+						key={task.id}
+						style={{
+							textDecoration: task.isCompleted ? "line-through" : "none",
+						}}
+						onClick={() => handleTaskClick(task.id)}
+					>
 						{task.text}
 						<button
 							className="del-btn"
-							onClick={() => handleDeleteClick(task.id)}
+							onClick={(e) => {
+								e.stopPropagation();
+								handleDeleteClick(task.id);
+							}}
 						>
 							<i className="fa fa-trash"></i>
 						</button>

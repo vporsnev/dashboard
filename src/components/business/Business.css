@@ -1,4 +1,4 @@
-.notes {
+.business {
 	box-shadow: rgba(29, 32, 34, 0.84) 3px 3px 6px 0px inset,
 		rgba(255, 255, 255, 0.217) -3px -3px 6px 1px inset;
 	padding: 20px;
@@ -6,11 +6,4 @@
 	width: 300px;
 	height: 300px;
 	overflow: scroll;
-}
-
-@media (max-width: 600px) {
-	.notes {
-		margin: 0;
-		width: auto;
-	}
 }

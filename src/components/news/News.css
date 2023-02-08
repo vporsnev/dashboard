@@ -7,10 +7,9 @@
 		rgba(237, 237, 237, 0.217) -3px -3px 6px 1px inset;
 	padding: 20px;
 	border-radius: 20px;
-	width: 500px;
+	width: 300px;
 	height: 300px;
 	overflow: scroll;
-	margin-right: 30px;
 }
 
 .news h3 {
@@ -27,4 +26,11 @@
 	height: 80px;
 	object-fit: cover;
 	margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+	.news {
+		margin: 0;
+		width: auto;
+	}
 }
