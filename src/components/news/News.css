@@ -7,20 +7,25 @@
 	height: 300px;
 }
 
-.news h3 {
+.art {
 	margin: 0;
 }
+
 .article {
 	display: flex;
 	flex-direction: row;
 	text-decoration: none;
+	margin: 10px 0 0 0;
 }
 
-.news-img {
-	width: 100px;
-	height: 80px;
-	object-fit: cover;
-	margin-right: 10px;
+.art-title {
+	margin-top: 11px;
+	margin: 0;
+}
+
+.art-source {
+	margin-top: 5px;
+	font-size: 10px;
 }
 
 @media (max-width: 600px) {

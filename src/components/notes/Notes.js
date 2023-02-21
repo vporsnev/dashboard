@@ -51,9 +51,7 @@ export default function Note() {
 
 	return (
 		<div className="box notes">
-			<div className="box-title">
-				<h3>Notes</h3>
-			</div>
+			<h3>Notes</h3>
 			<form onSubmit={handleFormSubmit} className="new-note">
 				<input
 					name="note"

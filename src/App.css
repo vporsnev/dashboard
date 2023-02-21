@@ -102,17 +102,13 @@ a {
 		rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
 		rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 	border: 1px solid rgba(25, 25, 25, 0.2);
-	padding: 0 20px 20px 20px;
+	padding: 20px;
 	border-radius: 20px;
 	overflow: scroll;
 }
 
 .box-title {
-	position: sticky;
-	top: 0px;
-	height: 20px;
-	background-color: inherit;
-	padding: 15px 0 10px 0;
+	padding-bottom: 15px;
 }
 
 @media (max-width: 600px) {
