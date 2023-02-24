@@ -54,7 +54,7 @@ export default function Weather() {
 					{data.weather ? (
 						<img
 							className="icon"
-							src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`}
+							src={`https://openweathermap.org/img/wn/${data.weather[0].icon}.png`}
 						/>
 					) : null}
 					{data.weather ? <p className="main">{data.weather[0].main}</p> : null}
